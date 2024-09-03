@@ -1,0 +1,121 @@
+.carousel-caption {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Optional: Adds a dark overlay for better text readability */
+  color: white; /* Optional: Sets the text color to white */
+}
+
+.carousel-indicators {
+  bottom: 100px;
+}
+
+.carousel-indicators .active {
+  background-color: #bb3451; /* Color for the active indicator */
+}
+
+.carousel-caption h1 {
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 50px;
+}
+
+.carousel-caption h5 {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+
+.carousel-caption button {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.button-div {
+  display: flex;
+}
+
+.button-div .l-btn2 {
+  margin-left: 2rem;
+}
+
+.l-btnn2 {
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #bb3451;
+  border: 0;
+  text-decoration: none;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.scam-butt {
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #ffffff;
+  border: 0;
+  text-decoration: none;
+  padding: 15px;
+  color: #97213b;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* For small screens, stack images vertically */
+@media (max-height: 500px) {
+  .carousel-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .carousel-item {
+    height: 100vh; /* Full viewport height for each item */
+    width: 100%;
+    flex: 0 0 100%; /* Ensure each item takes full width */
+  }
+
+  .carousel-item img {
+    height: auto; /* Adjust height to maintain aspect ratio */
+    width: 100%; /* Full width of the container */
+    object-fit: cover; /* Ensures the image covers the container */
+  }
+
+  .carousel-caption {
+    position: static; /* Position caption normally in the flow */
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a dark overlay for better text readability */
+    color: white; /* Optional: Sets the text color to white */
+    padding: 10px; /* Adjust padding for small screens */
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none; /* Hide controls on short screens */
+  }
+}
+
+/* Default styles for larger screens */
+@media (min-height: 501px) {
+  .carousel-inner {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .carousel-item img {
+    height: auto; /* Adjust height to maintain aspect ratio */
+    width: 100%; /* Full width of the container */
+    object-fit: cover; /* Ensures the image covers the container */
+  }
+}

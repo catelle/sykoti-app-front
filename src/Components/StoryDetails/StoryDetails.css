@@ -1,0 +1,89 @@
+.story-detail {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .story-detail h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #610437;
+    text-align: center;
+  }
+  
+  .story-image {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+   
+    height: auto;
+   
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .story-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .story-info p {
+    margin: 5px 0;
+    flex: 1 1 30%;
+  }
+  
+  .story-content p {
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  
+  .interaction-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .interaction-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .interaction-buttons .like-btn {
+    background: #ff7675;
+    color: #fff;
+  }
+  
+  .interaction-buttons .like-btn:hover {
+    background: #ff5a5a;
+  }
+  
+  .interaction-buttons .vote-btn {
+    background: #74b9ff;
+    color: #fff;
+  }
+  
+  .interaction-buttons .vote-btn:hover {
+    background: #4aa3ff;
+  }
+  
+  .interaction-buttons .comment-btn {
+    background: #55efc4;
+    color: #fff;
+  }
+  
+  .interaction-buttons .comment-btn:hover {
+    background: #2ecc71;
+  }
+  

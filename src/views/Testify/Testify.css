@@ -1,0 +1,93 @@
+/* Container for the form */
+/* Container for the form */
+.form-containert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+    padding-top: calc(2rem ); /* Account for navbar height */
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+
+/* Styling for the intro section */
+.introt {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.introt h1 {
+    font-size: 1.5rem; /* Adjust as needed */
+  
+}
+
+.introt p {
+    font-size: 1rem; /* Adjust as needed */
+}
+
+/* Form styling */
+.request-formt {
+    width: 100%;
+    max-width: 800px; /* Limit the maximum width of the form */
+    background-color: #ffffff; /* White background for the form */
+    padding: 2rem;
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for form */
+}
+
+/* Form element styling */
+.form-controlt {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc; /* Light border color */
+    box-sizing: border-box;
+}
+
+/* Textarea styling */
+textarea.form-control {
+    resize: vertical; /* Allow vertical resizing of textareas */
+}
+
+/* Submit button styling */
+.submit-button {
+    background-color: #610437; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #5b08a7; /* Darker shade for hover effect */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .form-containert {
+        padding: 1rem;
+        padding-top: calc(2rem);
+    }
+
+    .introt h1 {
+        font-size: 1.2rem;
+    }
+
+    .introt p {
+        font-size: 0.9rem;
+    }
+
+    .request-formt {
+        padding: 1rem;
+    }
+
+    .form-controlt, .submit-button {
+        font-size: 0.9rem;
+    }
+}

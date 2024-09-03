@@ -1,0 +1,93 @@
+.law-item {
+    display: flex;
+    flex-direction: column; /* Allows for vertical stacking of content */
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .law-item-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .law-imagel {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 5px;
+  }
+  
+  .law-details {
+    flex: 1;
+  }
+  
+  .law-details h3 {
+    margin-top: 0;
+  }
+  
+  .law-details p {
+    margin: 5px 0;
+  }
+  
+  .law-full-content {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column; /* Stack content and buttons vertically */
+  }
+  
+  .law-full-content p {
+    margin-bottom: 10px; /* Space between content and buttons */
+  }
+  
+  .law-full-content .l-btn2 {
+    background-color: #252525; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none;
+    padding: 0.75rem 1.5rem; /* Adjust padding for button */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Space between buttons */
+    display: inline-block; /* Adjust width to fit content */
+    text-align: center; /* Center align text inside button */
+  }
+  
+  .law-full-content .l-btn2:hover {
+    background-color: #610437; /* Darker shade for hover effect */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .law-item-content {
+      flex-direction: column; /* Stack image and details vertically on small screens */
+      align-items: center;
+    }
+  
+    .law-image {
+      width: 80%; /* Adjust image size for smaller screens */
+      height: auto;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .law-details {
+      text-align: center; /* Center align text on smaller screens */
+    }
+  
+    .law-full-content {
+      width: 100%;
+      text-align: center; /* Center align text and buttons on mobile */
+    }
+  
+    .law-full-content .l-btn2 {
+      margin: 10px 0; /* Adjust button margins for mobile */
+    }
+  }
+  

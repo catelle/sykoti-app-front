@@ -1,0 +1,18 @@
+/* src/components/Dashboard/Dashboard.css */
+.body {
+    background-color: white; /* Set the background color to white */
+    padding: 20px; /* Optional: Add some padding */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for a better appearance */
+    border-radius: 8px; /* Optional: Add some border radius */
+}
+.sharebtns {
+    outline: 0;
+    background-color:  #97213b;
+    text-decoration: none;
+    left: 0;
+    top: 0;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+}

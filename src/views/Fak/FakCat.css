@@ -1,0 +1,29 @@
+/* src/components/Dashboard/Dashboard.css */
+.body {
+    background-color: white; /* Set the background color to white */
+    padding: 20px; /* Optional: Add some padding */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for a better appearance */
+    border-radius: 8px; /* Optional: Add some border radius */
+}
+
+.fak-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .fak-image {
+    width: 100%; /* Adjust as necessary */
+    height: auto;
+  }  
+  .fak-list h1 {
+    font-size: 2rem;
+    margin: 0 auto;
+    color: #610437;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* Center items horizontally */
+   
+  }

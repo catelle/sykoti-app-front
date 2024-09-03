@@ -1,0 +1,50 @@
+.fak-detail {
+  max-width: 800px;
+  margin: 0 auto; /* Center the container */
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  /* Center items horizontally */
+  padding: 20px;
+}
+.fak-detail h1 {
+  font-size: 2rem;
+  margin: 0 auto;
+  color: #610437;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* Center items horizontally */
+ 
+}
+
+
+  .fak-images {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This centers the image vertically */
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 0 auto; /* Centers the image horizontally */
+    margin-bottom: 20px;
+   
+   
+  }
+  
+  .fak-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .fak-content {
+    padding: 0 20px; /* Add 20px padding on left and right */
+  }
+  
+  

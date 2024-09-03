@@ -1,0 +1,92 @@
+/* Overlay that covers the entire screen */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensures the modal is above other content */
+  }
+  
+  /* Container for modal content */
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for better visibility */
+    position: relative; /* Allows positioning of close button */
+  }
+  
+  /* Grouping of form elements */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Label styling for form elements */
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Makes labels more prominent */
+  }
+  
+  /* Textarea styling */
+  .form-group textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Light border for better visibility */
+    border-radius: 3px; /* Rounded corners */
+  }
+  
+  /* File input styling */
+  .form-group input[type="file"] {
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #007bff; /* Primary color */
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+  }
+  
+  button + button {
+    background-color: #6c757d; /* Secondary color for close button */
+  }
+  
+  button + button:hover {
+    background-color: #5a6268; /* Darker shade for close button hover */
+  }
+  
+  /* Close button styling */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    color: #007bff; /* Color change on hover */
+  }
+  

@@ -1,0 +1,59 @@
+/* auth.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../../assets/aaaa.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background to make the form stand out */
+  }
+  
+  form {
+    background: rgba(255, 255, 255, 0.8); /* Transparent white background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Adjust width as needed */
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .alert {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  .input, .btn {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .message {
+    text-align: center;
+    margin-top: 10px;
+  }
+  

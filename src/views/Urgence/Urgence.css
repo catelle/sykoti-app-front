@@ -1,0 +1,118 @@
+.scam-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .scam-item-content {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+  }
+  
+  .scam-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 5px;
+  }
+  
+  .scam-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .scam-details h5 {
+    margin-top: 0;
+  }
+  
+  .scam-details p {
+    margin: 5px 0;
+  }
+  
+  .scam-full-content {
+    margin-top: 10px;
+  }
+  
+  .scam-full-content a {
+    display: inline-block;
+    margin-top: 5px;
+    color: #610437;
+  }
+  
+  .scam-full-content button {
+    margin-top: 10px;
+    align-self: flex-start; /* Ensures buttons are aligned to the start of flex column */
+  }
+  
+  .l-btn, .l-btn2 {
+    background-color: #252525; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin: 5px; /* Add margin between buttons */
+    width: 150px; /* Ensure the width fits the content */
+    white-space: nowrap; /* Prevent the button text from wrapping */
+    display: inline-block;
+  }
+  
+  .l-btn:hover, .l-btn2:hover {
+    background-color: #610437; /* Darker shade for hover effect */
+  }
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .law-image {
+    display: block;
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+  }
+  
+  .verified-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+    width: 40px; /* Width of the circle */
+    height: 40px; /* Height of the circle */
+    border-radius: 50%; /* Makes the badge circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem; /* Adjust as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+  }
+  .buttons-div{
+    display: flex;
+  }
+  
+  @media (max-width: 768px) {
+    .scam-item-content {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+  
+    .scam-image {
+      margin-right: 0;
+      margin-bottom: 10px; /* Add space between image and text on smaller screens */
+    }
+  
+    .l-btn, .l-btn2 {
+      margin-left: 0; /* Remove left margin on smaller screens */
+    }
+  }
+  

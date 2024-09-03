@@ -1,0 +1,233 @@
+.navbar {
+  background-color:#363535; /*rgba(240, 235, 225, 0.8); White with medium opacity */
+  z-index: 10;
+  width: 100%;
+  padding: 4px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.active-link {
+  color: #ff5733;
+  font-weight: bold;
+}
+/* src/components/Navbar/Navbar.css */
+.logo {
+  width: 100px; /* Set the width of the logo */
+  height: auto; /* This ensures the height is adjusted proportionally */
+  max-height: 50px; /* Optional: Limit the maximum height */
+  object-fit: contain; /* Ensure the logo is contained within the specified dimensions */
+}
+.dark-nav{
+  background: #363535;
+  transition: 0.5s;
+}
+
+.navbar-toggler {
+  border: none;
+  z-index: 2; /* Ensure the toggle button is above the navbar content */
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>');
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;/*#333;  Adjust text color */
+  font-size: 20px;
+}
+.active-link {
+  color: #ff5733;
+  font-weight: bold;
+}
+.navbar-nav .nav-link:hover {
+  color: #ca3959;/*#333;  Adjust text color */
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-user .logout {
+  margin-left: 1rem;
+  color: #ffffff; /* Adjust logout link color */
+}
+.navbar-user .logout:hover {
+  margin-left: 1rem;
+  color: #ca3959; /* Adjust logout link color */
+}
+.navbar-name{
+  color:#ffffff;
+  font-size: 40px;
+}
+.navbar-user{
+  color: #ffffff;
+}
+
+.navbar-items {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-items li {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-items a {
+  color: white;
+  text-decoration: none;
+  
+}
+
+.navbar-items a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  gap: 10px; /* Adjust the gap between items   
+ as needed */
+}
+
+
+.dropdown-menu .dropdown-item {
+  font-size: 16px; /* Adjust font size as needed */
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #e07482; /* Adjust hover color as needed */
+}
+
+/* NavBar.css */
+
+/* General styles for the sidebar */
+.sidebar2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px; /* Width of the sidebar */
+  background-color: #97213b; /* Background color */
+  padding-top: 60px; /* Space from the top */
+  transition: 0.3s; /* Smooth transition for the sidebar open/close */
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  z-index: 1000; /* Ensure the sidebar is on top of other elements */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+
+/* Sidebar links */
+.sidebar2 a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 20px; /* Font size for links */
+  color: #f1f1f1; /* Text color */
+  display: block; /* Make links take up full width */
+  transition: 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for sidebar links */
+.sidebar2 a:hover {
+  background-color: #302f2f56; /* Change background on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+/* Style for the sidebar close button */
+.sidebar2 .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-height: 450px) {
+  .sidebar2 {
+    padding-top: 15px;
+  }
+  .sidebar2 a {
+    font-size: 16px;
+  }
+}
+
+
+
+.sidebtn {
+  background-color: transparent; /* Remove background color */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  cursor: pointer; /* Make it look like a clickable button */
+  outline: none; /* Remove the default focus outline */
+  display: inline-flex; /* Ensure the button size is just enough to contain the span */
+  align-items: center; /* Center the span vertically */
+  justify-content: center; /* Center the span horizontally */
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 30px; /* Width of the icon */
+  height: 2px; /* Thickness of the icon */
+  background-color: #ffffff; /* Color of the icon */
+  position: relative;
+
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 2px;
+ 
+  position: absolute;
+  left: 0;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px; /* Position the top line */
+}
+
+.navbar-toggler-icon::after {
+  top: 8px; /* Position the bottom line */
+}
+
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 0;
+    right: 0;
+   
+    background-color: rgba(255, 253, 253, 0.8); /* Same background color for mobile */
+    width: 250px; /* Adjust width as needed */
+    height: 100vh; /* Full height for mobile menu */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1; /* Ensure the navbar content is below the toggle button */
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 1rem 0;
+    color: #363535;
+  }
+}
